@@ -8,7 +8,7 @@ The purpose of this analysis was to use different machine learning models from t
 
 •	At first, we imported a credit card dataset from `LendingClub` using `pandas.read_csv` and transformed the data for our usage. Empty columns and rows were removed with `dropna` function, issued loans were also removed by filtering, interest rates were converted to numerical values, and the loans were classified into `low risk` and `high risk` based on their status.
 
-•	In the next step, we assigned the X variables with the `get_dummies()` method to transform strings into numerical values. Then we selected the `loan_status` column for our target value and counted the classes. 
+•	In the next step, we assigned the X variables with the `get_dummies()` method to transform string categories into numerical values. Then we selected the `loan_status` column for our target value and counted the classes. 
 
 ![loan_status](Resources/loan_status.png)
 
