@@ -16,33 +16,34 @@ The purpose of this analysis was to use different machine learning models from t
 
 •	We then sampled our training and testing data and proceed to fitting and testing our prediction models.
 
-> RandomOverSampler
+#### RandomOverSampler
 
 ![RandomOversampler](Resources/RandomOversampler.png)
 
 
-> SMOTE Oversampling
+#### SMOTE Oversampling
 
 ![SMOTE](Resources/SMOTE.png)
 
 
-> ClusterCentroids Undersampling
+#### ClusterCentroids Undersampling
 
 ![ClusterCentroids](Resources/ClusterCentroids.png)
 
 
-> SMOTEENN Combination
+#### SMOTEENN Combination
 
 ![SMOTEENN](Resources/SMOTEENN.png)
 
-> BalancedRandomForestClassifier
+
+#### BalancedRandomForestClassifier
 
 ![BalancedRandomForestClassifier](Resources/BalancedRandomForestClassifier.png)
 
 
-> EasyEnsembleClassifier
+#### EasyEnsembleClassifier
 
 ![EasyEnsembleClassifier](Resources/EasyEnsembleClassifier.png)
 
 
-#### Summary
+### Summary
