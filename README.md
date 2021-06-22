@@ -47,3 +47,12 @@ The purpose of this analysis was to use different machine learning models from t
 
 
 ### Summary
+
+•	In summary, we can see that the best balanced accuracy score is achieve with the `EasyEnsembleClassifier` model at 93.2%. The second best was the `BalancedRandomForestClassifier` with an accuracy score of 78.9%, while the oversampling and combination models were in the ~60%. The worst performing model is the undersampling `ClusterCentroids` at 54.5%.
+
+•	When looking at the precision values for all models, they all had excellent overall and low-risk scores, but poor high-risk loans scores. This is due to high number of low-risk loans and very low number of high-risk loans skewing the data. Therefore, the high number of false positive for the high-risk loans, is not affecting the overall picture a lot since that risk category represents only ~0.5% of the total loans. `TP/(TP + FP)`
+
+•	The recall or sensitivity is looking at the true positivity rate `TP/(TP + FN)`. Again, the model with the best sensitivity for both high- and low-risk loans was the `EasyEnsembleClassifier` with 92% and 94% respectively. 
+
+•	In our case, precision is not as important as sensitivity since we want to correctly predict all or most of the bad loans. The `EasyEnsembleClassifier` is falsely flagging 983 loans as high-risk but correctly predict 93 out of 101. With this model, the bank would decline (93+983)/(93+983+8+16121) = 6.3% of loan applications to catch 92% of the 0.5% high-risk loans. Since each default loan is a huge loss for the bank, I would recommend the `EasyEnsembleClassifier` model, unless high interest from falsely flagged and declined loans would be enough to cover for these losses.
+
