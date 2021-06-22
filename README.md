@@ -48,7 +48,7 @@ The purpose of this analysis was to use different machine learning models from t
 
 ### Summary
 
-•	In summary, we can see that the best balanced accuracy score is achieve with the `EasyEnsembleClassifier` model at 93.2%. The second best was the `BalancedRandomForestClassifier` with an accuracy score of 78.9%, while the oversampling and combination models were in the ~60%. The worst performing model is the undersampling `ClusterCentroids` at 54.5%.
+•	In summary, we can see that the best balanced accuracy score is achieve with the `EasyEnsembleClassifier` model at 93.2%. The second best was the `BalancedRandomForestClassifier` with an accuracy score of 78.9%, while the oversampling and combination models were in the ~60-69%. The worst performing model is the undersampling `ClusterCentroids` at 54.5%.
 
 •	When looking at the precision values for all models, they all had excellent overall and low-risk scores, but poor high-risk loans scores. This is due to high number of low-risk loans and very low number of high-risk loans skewing the data. Therefore, the high number of false positive for the high-risk loans, is not affecting the overall picture a lot since that risk category represents only ~0.5% of the total loans. `TP/(TP + FP)`
 
